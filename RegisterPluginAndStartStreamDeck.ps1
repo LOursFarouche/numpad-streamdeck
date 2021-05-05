@@ -27,7 +27,7 @@ If (-not (Test-Path $bindir)) {
   exit 1;
 }
 
-$pluginID = "com.maxoumask.ytmda"
+$pluginID = "com.maxoumask.numpad"
 Write-Host "PluginId : `"$pluginID`""
 
 if($IsMacOS) {

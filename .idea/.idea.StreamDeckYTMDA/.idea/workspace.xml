@@ -23,9 +23,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc8e6496-9d06-442e-8979-6e1decf735bf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.StreamDeckYTMDA/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StreamDeckYTMDA/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.StreamDeckYTMDA/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.StreamDeckYTMDA/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StreamDeckYTMDA/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.StreamDeckYTMDA/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StreamDeckYTMDA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StreamDeckYTMDA/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YTMDesktop.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/YTMDesktop.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.StreamDeckYTMDA/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StreamDeckYTMDA.sln" beforeDir="false" afterPath="$PROJECT_DIR$/StreamDeckYTMDA.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YTMDesktop.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NumPad.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YtmdaRest/Model/Commands/BaseCommand.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YtmdaRest/Model/Commands/CommandSetVolume.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YtmdaRest/Model/Commands/CommandTrackNext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YtmdaRest/Model/Commands/CommandTrackPause.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YtmdaRest/Model/Commands/CommandTrackPlay.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YtmdaRest/Model/Commands/CommandTrackPrevious.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YtmdaRest/Model/Commands/CommandTrackThumbsDown.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YtmdaRest/Model/Commands/CommandTrackThumbsUp.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YtmdaRest/Model/Commands/CommandVolumeDown.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YtmdaRest/Model/Commands/CommandVolumeUp.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YtmdaRest/Model/Lyrics.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YtmdaRest/Model/Player.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YtmdaRest/Model/Playlist.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YtmdaRest/Model/Query.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YtmdaRest/Model/Queue.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YtmdaRest/Model/TrackBasic.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YtmdaRest/Model/TrackFull.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YtmdaRest/YtmdaRestClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YtmdaRest/YtmdaRestConfig.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/ActionNextTrack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/actions/ActionNextTrack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/ActionPlayPause.cs" beforeDir="false" afterPath="$PROJECT_DIR$/actions/ActionPlayPause.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/ActionPreviousTrack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/actions/ActionPreviousTrack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/ActionThumbsDownTrack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/actions/ActionThumbsDownTrack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/ActionThumbsUpTrack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/actions/ActionThumbsUpTrack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/ActionVolumeDown.cs" beforeDir="false" afterPath="$PROJECT_DIR$/actions/ActionVolumeDown.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/ActionVolumeMute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/actions/ActionVolumeMute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/ActionVolumeUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/actions/ActionVolumeUp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/BaseYtmdaAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/actions/BaseNumPadAction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/property_inspector/js/property-inspector.js" beforeDir="false" afterPath="$PROJECT_DIR$/property_inspector/js/property-inspector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/property_inspector/property_inspector.html" beforeDir="false" afterPath="$PROJECT_DIR$/property_inspector/property_inspector.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/property_inspector/property_inspector_basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/Settings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/settings/Settings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/SettingsCollection.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/YtmdaSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ytmda_settings.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,13 +77,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/prout.csproj" />
-        <option value="$PROJECT_DIR$/Program.cs" />
-        <option value="$PROJECT_DIR$/YTMDesktop.csproj" />
-      </list>
-    </option>
+    <changedPaths>
+      <option value="$PROJECT_DIR$/actions/BaseNumPadAction.cs" />
+      <option value="$PROJECT_DIR$/property_inspector/property_inspector.html" />
+      <option value="$PROJECT_DIR$/property_inspector/js/property-inspector.js" />
+      <option value="$PROJECT_DIR$/appsettings.json" />
+      <option value="$PROJECT_DIR$/README.md" />
+      <option value="$PROJECT_DIR$/settings/Settings.cs" />
+    </changedPaths>
   </component>
   <component name="ProjectId" id="1jT7bxjw09WZ9JpOtehUweHqsfp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -80,7 +122,7 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/YTMDesktop.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/NumPad.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -113,6 +155,7 @@
       <workItem from="1603816312431" duration="4000" />
       <workItem from="1603816391926" duration="1390000" />
       <workItem from="1607608953407" duration="5448000" />
+      <workItem from="1620208762881" duration="785000" />
     </task>
     <servers />
   </component>

@@ -1,27 +1,29 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
+using numpad.input;
 using StreamDeckLib;
 using StreamDeckLib.Messages;
+using YTMDesktop;
 using YTMDesktop.settings;
-using YTMDesktop.YtmdaRest.Model;
 
-namespace YTMDesktop.actions
+namespace numpad.actions
 {
-    public abstract class BaseYtmdaAction: BaseStreamDeckActionWithSettingsModel<Settings>
+    public abstract class BaseNumPadAction: BaseStreamDeckActionWithSettingsModel<Settings>
     {
-        private new static readonly ILogger Logger = Program.LoggerFactory.CreateLogger(nameof(BaseYtmdaAction));
+        private new static readonly ILogger Logger = Program.LoggerFactory.CreateLogger(nameof(BaseNumPadAction));
 
         protected string LastContext { get; set; }
 
-        protected BaseYtmdaAction()
+        protected Keyboard.ScanCodeShort KeyToSend;
+
+        protected BaseNumPadAction(Keyboard.ScanCodeShort keyToSend)
         {
-            Program.RegisterObserver(OnPlayerUpdate);
+            KeyToSend = keyToSend;
         }
 
         protected new void SetModelProperties(StreamDeckEventPayload args)
         {
             base.SetModelProperties(args);
-            YtmdaSettings.Instance.UpdateConfig(SettingsModel);
         }
         
         public override Task OnDidReceiveGlobalSettings(StreamDeckEventPayload args)
@@ -45,7 +47,6 @@ namespace YTMDesktop.actions
             SetModelProperties(args);
             LastContext = args.context;
             Logger.LogDebug($"OnWillAppear [{SettingsModel}]");
-            Program.EnableObserver();
             return Task.CompletedTask;
         }
 
@@ -58,6 +59,8 @@ namespace YTMDesktop.actions
         public override async Task OnKeyUp(StreamDeckEventPayload args)
         {
             LastContext = args.context;
+            var keyboard = new Keyboard();
+            keyboard.Send(KeyToSend);
             await base.OnKeyUp(args);
         }
 
@@ -85,18 +88,6 @@ namespace YTMDesktop.actions
             await base.OnDeviceDidDisconnect(args);
         }
 
-        public override async Task OnApplicationDidLaunch(StreamDeckEventPayload args)
-        {
-            LastContext = args.context;
-            await base.OnApplicationDidLaunch(args);
-        }
-
-        public override async Task OnApplicationDidTerminate(StreamDeckEventPayload args)
-        {
-            LastContext = args.context;
-            await base.OnApplicationDidTerminate(args);
-        }
-
         public override async Task OnPropertyInspectorDidDisappear(StreamDeckEventPayload args)
         {
             LastContext = args.context;
@@ -107,11 +98,6 @@ namespace YTMDesktop.actions
         {
             LastContext = args.context;
             await base.OnPropertyInspectorDidAppear(args);
-        }
-
-        public virtual Task OnPlayerUpdate(Query query)
-        {
-            return Task.CompletedTask;
         }
     }
 }

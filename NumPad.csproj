@@ -6,8 +6,8 @@
         <LangVersion>latest</LangVersion>
 <!--        <RuntimeIdentifiers Condition="'$(Configuration)'=='Release' ">win-x64;osx-x64</RuntimeIdentifiers>-->
         <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
-        <AssemblyName>YTMDesktop</AssemblyName>
-        <RootNamespace>YTMDesktop</RootNamespace>
+        <RootNamespace>numpad</RootNamespace>
+        <PackageId>NumPad</PackageId>
     </PropertyGroup>
 
     <!-- Post build event scripts that deploy to stream deck -->
@@ -17,19 +17,19 @@
 
     <!--Dependencies-->
     <ItemGroup>
-        <PackageReference Include="StreamDeckLib" Version="0.*" />
-        <PackageReference Include="StreamDeckLib.Config" Version="0.*" />
-        <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
-        <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.2.0" />
-        <PackageReference Include="Serilog.Settings.Configuration" Version="3.0.1" />
-        <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="2.3.0" />
-        <PackageReference Include="Microsoft.Extensions.Logging" Version="2.2.0" />
-        <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
-        <PackageReference Include="Serilog" Version="2.7.1" />
-        <PackageReference Include="Serilog.Extensions.Logging" Version="2.0.2" />
-        <PackageReference Include="Serilog.Sinks.File" Version="4.0.0" />
+        <PackageReference Include="StreamDeckLib" Version="0.5.2040" />
+        <PackageReference Include="StreamDeckLib.Config" Version="0.5.2040" />
+        <PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="5.0.0" />
+        <PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
+        <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="3.1.0" />
+        <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+        <PackageReference Include="Serilog" Version="2.10.0" />
+        <PackageReference Include="Serilog.Extensions.Logging" Version="3.0.1" />
+        <PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
         <PackageReference Include="System.Net.WebSockets" Version="4.3.0" />
-        <PackageReference Include="System.Text.Json" Version="4.7.2" />
+        <PackageReference Include="System.Text.Json" Version="5.0.2" />
     </ItemGroup>
 
     <!--Deployment files that must go with the build executable -->
@@ -71,10 +71,7 @@
 
     <!-- Build Helper -->
     <ItemGroup>
-        <Content Include="property_inspector\property_inspector_basic.html">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </Content>
-        <Content Include="YTMDesktop.cmd" />
+        <Content Include="NumPad.cmd" />
     </ItemGroup>
 
     <!-- Include the README.md as part of the project for easy reference -->
@@ -104,18 +101,6 @@
         <None Update="images\actions\play\playImage@2x.png">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
-        <None Update="images\actions\next_track\nextTrackIcon.png">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-        <None Update="images\actions\next_track\nextTrackIcon@2x.png">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-        <None Update="images\actions\next_track\nextTrackImage.png">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-        <None Update="images\actions\next_track\nextTrackImage@2x.png">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
         <None Update="images\actions\play\pauseImage.png">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
@@ -138,39 +123,6 @@
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
         <None Update="images\actions\play_pause\playImage@2x.png">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-        <None Update="ytmda_settings.json">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-        <None Update="images\actions\previous_track\previousTrackIcon.png">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-        <None Update="images\actions\previous_track\previousTrackIcon@2x.png">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-        <None Update="images\actions\previous_track\previousTrackImage.png">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-        <None Update="images\actions\previous_track\previousTrackImage@2x.png">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-        <None Update="images\actions\thumbs_up\thumbsUpIcon.png">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-        <None Update="images\actions\thumbs_up\thumbsUpIcon@2x.png">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-        <None Update="images\actions\thumbs_up\thumbsUpOutlineImage.png">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-        <None Update="images\actions\thumbs_up\thumbsUpOutlineImage@2x.png">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-        <None Update="images\actions\thumbs_up\thumbsUpImage.png">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-        <None Update="images\actions\thumbs_up\thumbsUpImage@2x.png">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
         <None Update="images\actions\thumbs_down\thumbsDownIcon.png">
@@ -213,24 +165,6 @@
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
         <None Update="images\actions\volume_up\volumeUpImage@2x.png">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-        <None Update="images\actions\volume_mute\volumeOffIcon.png">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-        <None Update="images\actions\volume_mute\volumeOffIcon@2x.png">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-        <None Update="images\actions\volume_mute\volumeOffImage.png">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-        <None Update="images\actions\volume_mute\volumeOffImage@2x.png">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-        <None Update="images\actions\volume_mute\volumeOnImage.png">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
-        <None Update="images\actions\volume_mute\volumeOnImage@2x.png">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
     </ItemGroup>
